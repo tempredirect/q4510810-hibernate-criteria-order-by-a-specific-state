@@ -22,7 +22,6 @@ public class App
 
       c.addAnnotatedClass(MyEntity.class);
       SessionFactory sf = c.buildSessionFactory();
-
       
     }
 }
