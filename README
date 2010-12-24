@@ -1,9 +1,9 @@
 This is a small test project to help answer:
 
-http://stackoverflow.com/questions/2537378/hibernate-index-on-enumerated-field-doesnt-work
+http://stackoverflow.com/questions/4510810/hibernate-criteria-order-by-a-specific-state
 
 once cloned you should be able to build and run the test using:
 
 >mvn clean install
 
-the output from the test should show that hibernate has created an index on the Enum column
+the output from the test should show the results of a HQL order by clause with a case statement
