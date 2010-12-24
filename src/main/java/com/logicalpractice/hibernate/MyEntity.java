@@ -14,12 +14,18 @@ public class MyEntity {
   @GeneratedValue
   private Long id;
 
-  @Index(name = "IDX_NAME")
   private String name;
 
-  @Enumerated(EnumType.STRING)
-  @Index(name = "IDX_VALUE")
-  private MyEnum value;
+  private String state;
+
+
+  public MyEntity() {
+  }
+
+  public MyEntity(String name, String state) {
+    this.name = name;
+    this.state = state;
+  }
 
   public Long getId() {
     return id;
@@ -37,4 +43,12 @@ public class MyEntity {
     this.name = name;
   }
 
+
+  public String getState() {
+    return state;
+  }
+
+  public void setState(String state) {
+    this.state = state;
+  }
 }
